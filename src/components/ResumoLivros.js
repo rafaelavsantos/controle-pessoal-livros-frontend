@@ -16,7 +16,7 @@ const ResumoLivros = () => {
       const arrayGrafico = [["Ano", "R$ Total"]];
       
       dadosGrafico.data.map((dado) => {
-        arrayGrafico.push([dado.ano.toString(), dado.total]);
+        return arrayGrafico.push([dado.ano.toString(), dado.total]);
       });
       setGrafico(arrayGrafico);
     } catch (err) {
